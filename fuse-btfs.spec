@@ -8,6 +8,8 @@ License:	GPLv3
 URL:		https://github.com/johang/btfs
 Source0:	btfs-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	pkgconfig(fuse)
 BuildRequires:	pkgconfig(libtorrent-rasterbar)
 BuildRequires:	pkgconfig(libcurl)
