@@ -1,12 +1,12 @@
 Summary:	FUSE filesystem Bittorrent
 Name:		fuse-btfs
-Version:	2.8
+Version:	2.13
 Release:	1%{?dist}
 
 Group:		System Environment/Base
 License:	GPLv3
 URL:		https://github.com/johang/btfs
-Source0:	btfs-%{version}.tar.gz
+Source0:	https://github.com/johang/btfs/archive/v2.13.tar.gz#/btfs-%{version}.tar.gz
 
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -39,5 +39,8 @@ make %{?_smp_mflags}
 %{_mandir}/man1/*
 
 %changelog
+* Mon Apr  3 2017 Arkady L. Shane <ashejn@russianfedora.pro> - 2.13-1
+- update to 2.13
+
 * Tue Mar  1 2016 Arkady L. Shane <ashejn@russianfedora.pro> - 2.8-1.R
 - initial build
